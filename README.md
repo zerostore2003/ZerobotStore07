@@ -37,13 +37,13 @@
 ```
 
 # Baca Nih!!!
-- Change [ownerNumb](https://github.com/xdevteam404/xdev-self/blob/main/xdev.js#71)
+- Change [ownerNumb](https://github.com/bayu2003/ZerobotStore07/blob/main/xdev.js#71)
 
-- Change [Menu](https://github.com/xdevteam404/xdev-self/blob/main/message/help.js)
+- Change [Menu](https://github.com/bayu2003/ZerobotStore07/blob/main/message/help.js)
 
-- Change [Thumbnail](https://github.com/xdevteam404/xdev-self/blob/main/stik/thumb.jpeg)
+- Change [Thumbnail](https://github.com/bayu2003/ZerobotStore07/blob/main/stik/thumb.jpeg)
 
-- Change [FakeThumbn](https://github.com/xdevteam404/xdev-self/blob/main/stik/fake.jpeg)
+- Change [FakeThumbn](https://github.com/bayu2003/ZerobotStore07/blob/main/stik/fake.jpeg)
 
 # INSTALLL
 * [Node.js](https://nodejs.org/en/)
