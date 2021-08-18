@@ -2272,8 +2272,8 @@ break
 
  
 default:
-if (button == 'OWNER') {
-console.log('OWNER')
+if (button == 'SEWA BOT') {
+console.log('SEWA BOT')
 let inilist = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
@@ -2286,15 +2286,15 @@ hehe = await xdev.sendMessage(from, {
 "displayName": `${inilist.length} kontak`,
 "contacts": inilist 
 }, 'contactsArrayMessage', { quoted: dev })
-xdev.sendMessage(from,'Nih Kak Creator X - Dev Bot',text,{quoted: hehe})
+xdev.sendMessage(from,'Nih kak chat owner saya kalo mau sewa bot',text,{quoted: hehe})
 }
 if (button == 'YOUTUBE') {
 console.log('YOUTUBE')
-xdev.sendMessage(from, `*Nih kak youtube saya Zero YT7*\nhttp://youtube.com/Zero_YT7\n\nJangan lupa di subscribe ya`, text, {quoted: dev})
+xdev.sendMessage(from, `*Nih kak youtube saya*\nhttp://youtube.com/Zero_YT7\n\nJangan lupa di subscribe ya`, text, {quoted: dev})
 }
 if (button == 'DONASI') {
 console.log('DONASI')
-xdev.sendMessage(from, `*Nih kak yg mau donasi*\n\ngopay : 085157740529 mikey\n\ndana :08988743499 mustakim\n\novo : 08988743499 zero store\n\n*Terimakasih yg udh mau donasi semoga rejekinya tambah lancar 🙏🏻*`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
+xdev.sendMessage(from, `*Nih kak yg mau donasi*\n\ngopay : 085157740529 mikey\n\ndana :08988743499 mustakim\n\novo : 08988743499 zero store\n\n*Terimakasih yg udh mau donasi semoga rejekinya tambah lancar 🙏🏻*`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname} donasi yuk`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/b60844450804e76f97f6e.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
 }
 if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
