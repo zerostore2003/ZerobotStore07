@@ -1,5 +1,5 @@
-// SC BY X - Dev Team
-// JANGAN DIPERJUAL BELIKAN !
+// SC BY Zero Store
+// JANGAN DI OTAK ATIK NANTI ERROR NANGIS!
 
 const
 	{
