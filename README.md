@@ -8,10 +8,10 @@
 >
 </div>
 <p align="center">
-  <a href="https://github.com/xdevteam404"><img title="Author" src="https://img.shields.io/badge/Author-xdev team-red.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/bayu2003"><img title="Author" src="https://img.shields.io/badge/Author-zero store-red.svg?style=for-the-badge&logo=github" /></a>
   <h4 align="center">
   <a
-  <a href="https://wa.me/62895619083555">SC FREE API KOK GAN >//< </a>
+  <a href="https://wa.me/6285157740529">SC FREE API KOK GAN >//< </a>
 </h4>
 </p>
 
@@ -24,14 +24,14 @@
 > pkg install bash
 > pkg install ffmpeg
 > pkg install libwebp
-> git clone https://github.com/xdevteam404/xdev-self
-> cd xdev-self
+> git clone https://github.com/bayu2003/ZerobotStore07
+> cd ZerobotStore07
 > npm i
 > node run.js
 # Untuk Sdcard (File Sudah Di Download)
 > cd /sdcard
-> cp -r xdev-self-main $HOME
-> cd xdev-self-main
+> cp -r ZerobotStore07-main $HOME
+> cd ZerobotStore07-main
 > npm i
 > node run.js
 ```
