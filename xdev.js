@@ -221,7 +221,7 @@ module.exports = xdev = async (xdev, dev) => {
                     message: {
                         "imageMessage": {
                             "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc",
-                            "mimetype": "image/jpeg",
+                            "mimetype": "image/jpg",
                             "caption": fake,
                             "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=",
                             "fileLength": "28777",
@@ -231,7 +231,7 @@ module.exports = xdev = async (xdev, dev) => {
                             "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=",
                             "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69",
                             "mediaKeyTimestamp": "1610993486",
-                            "jpegThumbnail": fs.readFileSync('./stik/thumb.jpeg'),
+                            "jpegThumbnail": fs.readFileSync('./stik/thumb.jpg'),
                             "scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="
                         }
                     }
@@ -251,7 +251,7 @@ module.exports = xdev = async (xdev, dev) => {
                     message: {
                         "imageMessage": {
                             "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc",
-                            "mimetype": "image/jpeg",
+                            "mimetype": "image/jpg",
                             "caption": fake,
                             "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=",
                             "fileLength": "28777",
@@ -261,7 +261,7 @@ module.exports = xdev = async (xdev, dev) => {
                             "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=",
                             "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69",
                             "mediaKeyTimestamp": "1610993486",
-                            "jpegThumbnail": fs.readFileSync('./stik/thumb.jpeg'),
+                            "jpegThumbnail": fs.readFileSync('./stik/thumb.jpg'),
                             "scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="
                         }
                     }
@@ -334,7 +334,7 @@ module.exports = xdev = async (xdev, dev) => {
 				if (!isAntiLink) return
 				if (isGroupAdmins) return
 				var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-				reply(` *「 GROUP LINK DETECTOR 」*\nKamu mengirimkan link grup chat, maaf kamu di kick dari grup :(`)
+				reply(` *「 LINK GROUP TERDETEKSI 」*\nKamu mengirimkan link grup chat, maaf kamu di kick dari grup, jangan harap bisa kembali lagi :(`)
 				setTimeout(() => {
 				xdev.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
 				}, 0)
@@ -345,7 +345,7 @@ module.exports = xdev = async (xdev, dev) => {
     if (!AntiVirtex) return
     if (isGroupAdmins) return
     reply('Tandai telah dibaca\n'.repeat(300))
-    reply(`「 *PETUGAS PEMBERSIH* 」\n\nKamu nakal si! Ngapain kirim virus? \nMaaf tapi aku harus mengeluarkan kamu...\nSelamat tingal~`)
+    reply(`「 *PETUGAS PEMBERSIH* 」\n\nGoblok lu ya! Ngapain kirim virus? \nMaaf tapi aku harus mengeluarkan kamu...\nSelamat tingal~`)
     console.log(color('[KICK]', 'red'), color('Received a virus text!', 'yellow'))
     xdev.groupRemove(from, [sender])
     }
@@ -495,14 +495,14 @@ pic = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
 gambar = await getBuffer(pic)
 mhan = await xdev.prepareMessage(from, gambar, image, {thumbnail: gambar})
 gbutsan = [
-  {buttonId: 'CREATOR', buttonText: {displayText: 'CREATOR'}, type: 1},
-  {buttonId: 'GITHUB', buttonText: {displayText: 'GITHUB'}, type: 1},
-  {buttonId: 'REST API TEAM', buttonText: {displayText: 'REST API'}, type: 1}
+  {buttonId: 'OWNER', buttonText: {displayText: 'OWNER'}, type: 1},
+  {buttonId: 'YOUTUBE', buttonText: {displayText: 'YOUTUBE'}, type: 1},
+  {buttonId: 'DONASI', buttonText: {displayText: 'DONASI'}, type: 1}
 ]
  gbuttonan = {
 imageMessage: mhan.message.imageMessage,
     contentText: help.menu(pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita),
-    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷\n© 𝑿 - 𝑫𝒆𝒗 𝑻𝒆𝒂𝒎`,
+    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷\n© Zero Store`,
     buttons: gbutsan,
     headerType: 4
 }
@@ -2272,13 +2272,13 @@ break
 
  
 default:
-if (button == 'CREATOR') {
-console.log('CREATOR')
+if (button == 'OWNER') {
+console.log('OWNER')
 let inilist = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'X - Dev Team',
+"displayName":'Zero Store',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -2288,19 +2288,19 @@ hehe = await xdev.sendMessage(from, {
 }, 'contactsArrayMessage', { quoted: dev })
 xdev.sendMessage(from,'Nih Kak Creator X - Dev Bot',text,{quoted: hehe})
 }
-if (button == 'GITHUB') {
-console.log('GITHUB')
-xdev.sendMessage(from, `*Nih kak github X - Dev Team*\n*Scnya free kak dan juga free api 🤗*\n*Ingat ! jangan diperjual belikan yah !*\n\nhttps://github.com/xdevteam404`, text, {quoted: dev})
+if (button == 'YOUTUBE') {
+console.log('YOUTUBE')
+xdev.sendMessage(from, `*Nih kak youtube saya Zero YT7*\nhttp://youtube.com/Zero_YT7\n\nJangan lupa di subscribe ya`, text, {quoted: dev})
 }
-if (button == 'REST API') {
-console.log('REST API')
-xdev.sendMessage(from, `*Nih kak rest api yang digunakan oleh X - Dev Team Dan juga free*\n\nhttps://xdev-api.herokuapp.com/api\n\n*Gunakan dengan bijak dan jangan spam yah kak 🙏🏻*`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
+if (button == 'DONASI') {
+console.log('DONASI')
+xdev.sendMessage(from, `*Nih kak yg mau donasi*\n\ngopay : 085157740529 mikey\n\ndana :08988743499 mustakim\n\novo : 08988743499 zero store\n\n*Terimakasih yg udh mau donasi semoga rejekinya tambah lancar 🙏🏻*`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
 }
 if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
 qur = budy.slice(2)
 exec(qur, (err, stdout) => {
-if (err) return reply(`@X - Dev Team:~ ${err}`)
+if (err) return reply(`@Zero Store:~ ${err}`)
 if (stdout) {
 reply(stdout)
 }
